@@ -38,7 +38,7 @@ func checkDomain(domain string) {
 
 	if err == nil {
 		hasMX = true
-		log.Printf("Error hasMX: %v\n", err) // Corregir esta línea
+		log.Printf("Error hasMX: %v\n", err)
 	}
 
 	txtRecords, err := net.LookupTXT(domain)
